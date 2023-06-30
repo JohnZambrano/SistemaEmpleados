@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Sistema de empleados</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+
+  </head>
+
+    <body>
+      <div class="panel">
+        <h2>Información del empleado</h2>
+        <div id="body">
+        
+          <form method="get" action="accion.html">
+            <div class="container">
+              <img src="img/perfil.jpg" alt="Descripción de la imagen">
+            </div>
+            
+          Nombre: <input type="text" name="nombre" placeholder="nombre"/><br /><br>
+          
+          Apellidos: <input type="text" name="apellidos" placeholder="apellido" /><br /><br>
+          
+          Genero:  <select id="genero"><option value="femenino">Femenino</option> <option value="masculino">Masculino</option></select> 
+          <br /><br>
+  
+          Fecha de nacimiento: <input type="date" name="fechaNacimiento" placeholder="fechaNacimiento"/> <br><br>
+         
+          Fecha Ingreso: <input type="date" name="fechaIngreso" placeholder="fechaIngreso"/><br /><br>
+          
+          Fecha Ingreso: <input type="number" name="salarioBasico" placeholder="salarioBasico"/><br /><br>
+        </form>
+        <br>
+        <button onclick="visualizarEmpleado()   ">Visualizar información</button>
+      </div>
+    
+      <div class="panel">
+        <h2>Salario básico</h2>
+        <label for="salarioModificado">Salario modificado:</label>
+        <input type="number" id="salarioModificado">
+        <button onclick="modificarSalario()   ">Modificar</button>
+      </div>
+    
+      <div class="panel">
+        <h2>Edad, Antigüedad y Prestaciones</h2>
+        <button onclick="calcularEdad()">Calcular edad</button>
+        <label id="edadLabel"></label>
+        <br>
+        <button onclick="calcularAntiguedad()">Calcular antigüedad</button>
+        <label id="antiguedadLabel"></label>
+        <br>
+        <button onclick="calcularPrestaciones()">Calcular prestaciones</button>
+        <label id="prestacionesLabel"></label>
+      </div>
+    
+      <div class="panel">
+        <h2>Opción 1 - Información complementaria</h2>
+        <label for="nivelAcademico">Nivel académico:</label>
+        <input type="text" id="nivelAcademico">
+        <br>
+        <button onclick="agregarInformacionComplementaria()">Agregar información</button>
+      </div>
+    
+      <script src="js/script.js"></script>
+    
+  
+    
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>
