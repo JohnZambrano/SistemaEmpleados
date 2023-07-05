@@ -1,18 +1,27 @@
-.panel {
-    margin-bottom: 20px;
-  }
+
   
   h2 {
     margin-bottom: 10px;
+    text-align: left;
+    font-family: fantasy;
   }
   
   label {
     display: block;
-    margin-top: 10px;
+    margin-top: 50px;
   }
   
   button {
     margin-top: 10px;
+  }
+
+  /*Daremos los estilos a cada parte del articulo general */
+
+  .general {
+    margin: 0;
+    padding: 0.3rem;
+    background-color: #eee;
+    font: 1rem 'Fira Sans', sans-serif;
   }
 
   .container {
@@ -23,7 +32,45 @@
   }
   
   .container img {
-    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
-    max-height: 100%; /* Ajusta la altura máxima de la imagen */
+    max-width: 70%; /* Ajusta el ancho máximo de la imagen */
+    max-height: 70%; /* Ajusta la altura máxima de la imagen */
   }
+
+.informacion {
+    margin: 0.5rem;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.salario {
+    background: right/contain content-box border-box no-repeat url('/media/examples/rain.svg') white;
+    text-align: center;
+    font-family:fantasy;
+}
+
+
+.calculos {
+    margin: 0.5rem;
+    padding: 0.3rem;
+    font-size: 0.8 rem;
+    font-family:fantasy;
+    align-items: center;
+}
+
+.centrar{
+  flex: 1;
+  align-items: center;
+}
+ /*rigth y left ubican las etiquetas en la parte derecha y a la imagen en la parte izquierda */
+  
+  .left {
+    flex: 1; /* Ocupa todo el espacio sobrante en la fila */
+  }
+  
+  
+  .right {
+    flex: 1; /* Ocupa todo el espacio sobrante en la fila */
+    text-align: right;
+  }
+  
   
