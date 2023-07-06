@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Opción 2</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+
+  </head>
+
+<body>
+  
+  <div class="container">
+    <div class="contenedor-form3">
+      <h2 class="p-2">Generación de Credenciales</h2>
+      <form> <!--Formulario de asistencia-->
+        <div class="form-outline mb-3">
+          <div class="form-outline">
+            <div class="form-group">
+              <select class="form-control" id="tipousuario" name="tipousuario"> <!--id select tipo usuario-->
+                <option disabled selected value="">Seleccione una opción</option>
+                <option value="Administrador">Administrador</option>
+                <option value="Vendedor">Vendedor</option>
+                <option value="Auxiliar">Auxiliar</option>
+              </select>
+              <label for="tipousuario">Tipo de usuario</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-outline mb-2"> <!--Id campo de nombre de usuario-->
+          <input type="text" id="nombre-usuario"
+            class="form-control" placeholder="Ingrese un nombre de usuario" required /><!--Input para nombre usuario-->
+          <label class="form-label" for="nombre-usuario">Nombre de usuario</label>
+        </div>
+
+        <div class="form-outline mb-4">
+          <div class="form-group">
+            <select class="form-control" id="area" name="area"> <!--id select tipo usuario-->
+              <option disabled selected value="">Seleccione una opción</option>
+              <option value="Gerencia">Gerencia</option>
+              <option value="Administración">Administración</option>
+              <option value="Vigilancia">Vigilancia</option>
+              <option value="Limpieza">Limpieza</option>
+            </select>
+            <label for="area">Area de trabajo</label>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <input type="input" id="input-correo" class="form-control" disabled/> <!--id input del correo-->
+          <label class="form-label" for="input-correo">Generación de correo</label> <br>
+        </div>
+
+        <div class="col-md-6">
+          <input type="password" id="input-clave" class="form-control" disabled/> <!--id input de la clave-->
+          <label class="form-label" for="input-clave">Generación de clave</label> <br>
+        </div>
+          <!-- 2 column grid layout for inline styling -->
+          <div class="row mb-3 pt-2">
+            <div class="col d-flex justify-content-center">
+              <button type="button" class="btn btn-dark2 btn-block"
+                onclick="generarDatosCredenciales()">Generar datos de acceso</button>
+            </div>
+          </div>   
+      </form>
+    </div>
+  </div>
+
+
+<script src="js/script.js"></script>   
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Custom scripts -->
+<script src="sweetalert2/dist/sweetalert2.min.js"></script>
+
+</body>
+</html>

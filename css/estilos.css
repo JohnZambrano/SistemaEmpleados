@@ -1,5 +1,39 @@
 
-  
+body{ /*Estilo general*/
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif; /*Fuente*/
+  background: rgb(70, 73, 88);
+  margin-bottom: 25px;
+}
+
+/*Contenedores para las diferentes vistas*/
+.container{ /*Contenedor general*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-form2{ /*Contenedor del formulario de información academica*/
+  background: rgb(142, 154, 175);
+  border-radius: 10px;
+  padding: 10px 70px;
+  box-shadow: 0 0 5px 0 rgb(163, 217, 255);
+  width: 40%;
+  margin: 80px 0;
+  display: grid;
+  place-items: center;
+}
+
+.contenedor-form3{ /*Contenedor del formulario de acceso*/
+  background: rgb(142, 154, 175);
+  border-radius: 10px;
+  padding: 5px 70px;
+  box-shadow: 0 0 5px 0 rgb(163, 217, 255);
+  width: 40%;
+  margin: 1px 0;
+  display: grid;
+  place-items: center;
+}
   h2 {
     margin-bottom: 10px;
     text-align: left;
@@ -10,10 +44,14 @@
     display: block;
     margin-top: 50px;
   }
-  
+
+  /* Estilos delos botones de los calculos */
+
   button {
     margin-top: 10px;
   }
+
+  
 
   /*Daremos los estilos a cada parte del articulo general */
 
@@ -24,23 +62,38 @@
     font: 1rem 'Fira Sans', sans-serif;
   }
 
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh; /* Ajusta la altura a tu preferencia */
-  }
-  
-  .container img {
-    max-width: 70%; /* Ajusta el ancho máximo de la imagen */
-    max-height: 70%; /* Ajusta la altura máxima de la imagen */
-  }
+   /*Daremos los estilos a cada articulo */
 
 .informacion {
     margin: 0.5rem;
     padding: 0.3rem;
     font-size: 1.2rem;
 }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Ajusta la altura a tu preferencia */
+}
+
+.container img {
+  max-width: 70%; /* Ajusta el ancho máximo de la imagen */
+  max-height: 70%; /* Ajusta la altura máxima de la imagen */
+}
+
+/*rigth y left ubican las etiquetas en la parte derecha y a la imagen en la parte izquierda */
+ 
+.left {
+  flex: 1; /* Ocupa todo el espacio sobrante en la fila */
+}
+
+
+.right {
+  flex: 1; /* Ocupa todo el espacio sobrante en la fila */
+  text-align: right;
+}
+
+/* Estilos de Articulo salario */
 
 .salario {
     background: right/contain content-box border-box no-repeat url('/media/examples/rain.svg') white;
@@ -48,29 +101,55 @@
     font-family:fantasy;
 }
 
+/* Estilos de Articulo calculos */
 
 .calculos {
-    margin: 0.5rem;
-    padding: 0.3rem;
+    margin: 50px;
+    padding: 50px;
     font-size: 0.8 rem;
     font-family:fantasy;
-    align-items: center;
 }
 
-.centrar{
-  flex: 1;
+.centrar {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 80vh; /* Opcional, si deseas centrar verticalmente en toda la altura del viewport */
 }
- /*rigth y left ubican las etiquetas en la parte derecha y a la imagen en la parte izquierda */
+
   
-  .left {
-    flex: 1; /* Ocupa todo el espacio sobrante en la fila */
+  /* Estilos de Articulo extención*/
+  .extension{
+    background: right/contain content-box border-box no-repeat url('/media/examples/rain.svg') white;
+    text-align: center;
+    font-family:fantasy;
+}
+  }
+  .container {
+    text-align: center;
   }
   
-  
-  .right {
-    flex: 1; /* Ocupa todo el espacio sobrante en la fila */
-    text-align: right;
+  .button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color:darkgray;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
   }
+
+  
+/*Estilo para el sweet alert*/
+.format-pre pre {
+  text-align: left;
+  padding: 10px;
+  font-size: 14px;
+}
+  
+  
+  
   
   

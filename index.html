@@ -27,73 +27,79 @@
 
     <body>
 
-      <article class="general">
+    <article class="general">
       <article class="informacion">
       <div class="container">
-        
       <div class="left">
-  
          <form method="get" action="accion.html">
-        <h2>Datos personales</h2> <br> 
+          
+        <h2 class="position-absolute top-0 start-0">Datos personales</h2> <br> <br><br>
             
-          Nombre: <input type="text" name="nombre" placeholder="nombre"/><br /><br>
+          Nombre: <input type="text" id="nombre" placeholder="nombres"/><br /><br>
           
-          Apellidos: <input type="text" name="apellidos" placeholder="apellido" /><br /><br>
+          Apellidos: <input type="text" id="apellido" placeholder="apellidos" /><br /><br>
           
-          Genero:  <select id="genero"><option value="femenino">Femenino</option> <option value="masculino">Masculino</option></select> 
+          Genero:  <select id="genero"><option value="Femenino">Femenino</option> <option value="Masculino">Masculino</option></select> 
           <br /><br>
   
-          Fecha de nacimiento: <input type="date" name="fechaNacimiento" placeholder="fechaNacimiento"/> <br><br>
+          Fecha de nacimiento: <input type="date" id="fechaNacimiento" placeholder="fechaNacimiento"/> <br><br>
          
-          Fecha Ingreso: <input type="date" name="fechaIngreso" placeholder="fechaIngreso"/><br /><br>
+          Fecha Ingreso: <input type="date" id="fechaIngreso" placeholder="fechaIngreso"/><br /><br>
+
+          Salario: <input type="number" id="salario" placeholder="salario"/><br /><br>
+      
         </form>
       </div>
         <br>
 
-          <img class= "right"><img src="img/perfil.jpg" alt="Descripción de la imagen">
+         <img class= "right"><img src="img/perfil.jpg" alt="Descripción de la imagen">
         </div>
+        <br><button onclick="visualizarEmpleado()   ">Visualizar información</button><br> 
 
       </article>
-        <!--<button onclick="visualizarEmpleado()   ">Visualizar información</button> -->
+
     <br>
     <article class="salario">
-        <h2> Salario</h2>
+      <h2>Salario</h2> <br> 
         Salario: <input type="number" id="salarioModificado" placeholder="salario">
         <button onclick="modificarSalario()   ">Modificar</button>
       </div>
     </article>
 
     <br>
-
+      <h2>Cálculos</h2> <br> 
       <article = class="calculos">
         <div class="centrar"> 
-        <h2> Cálculos</h2><br>
+
         <h2>Edad: 
-        <button onclick="calcularEdad()">Calcular edad</button>
-        <label id="edadLabel"></label>
+        <button id="btn-edad" type="button" class="btn btn-dark"onclick="calcularEdad()">Calcular edad</button><input type="input" id="calcularEdad" disabled/><label id="edadLabel" ></label>
         <br>
         <h2>Antiguaedad: 
-        <button onclick="calcularAntiguedad()">Calcular antigüedad</button>
-        <label id="antiguedadLabel"></label>
+        <button id="btn-edad" type="button" class="btn btn-dark"onclick="calcularAntiguedad()">Calcular antigüedad</button><input type="imput" id="calcularAntiguedad"><label id="antiguedadLabel"></label>
         <br>
-        <h2>Prestaciones: <button onclick="calcularPrestaciones()">Calcular prestaciones</button>
-        <label id="prestacionesLabel"></label>
+        <h2>Prestaciones: <button id="btn-edad" type="button" class="btn btn-dark"onclick="calcularPrestaciones()">Calcular prestaciones</button><input type="imput" id="calcularPrestaciones"><label id="prestacionesLabel"></label>
       </div>
     </article>
+ 
+
+  <!--Container para campos de calculos-->
 
     <br>
 
     <article class="extension">
       <div class="panel">
-        <h2>Opción 1 - Información complementaria</h2>
-        <label for="nivelAcademico">Nivel académico:</label>
-        <input type="text" id="nivelAcademico">
+        <h2>Puntos de extención</h2>
         <br>
-        <button onclick="agregarInformacionComplementaria()">Agregar información</button>
+      <div class="container">
+         <a href="src/scss/opcion1.html" class="button">Opción 1</a>
+         <a href="src/scss/opcion2.html" class="button">Opción 2</a>
       </div>
 
     </article>
     
+  </article>
+
+  
       <script src="js/script.js"></script>
     
   

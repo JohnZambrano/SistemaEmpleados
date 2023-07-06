@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Opción 1</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+
+  </head>
+
+<body>
+
+    <div class="container">
+      <div class="contenedor-form2">
+        <h2 class="p-3">Información Acádemica</h2>
+        <form> <!--Formulario de formación acádemica-->
+          <div class="form-outline mb-4">
+            <div class="form-outline">
+              <div class="form-group">
+                <select class="form-control" id="nivelacademico" name="nivelacademico">
+                  <option disabled selected value="">Seleccione una opción</option>
+                  <option value="Educación Primaria">Educación Primaria</option>
+                  <option value="Educación Secundaria">Educación Secundaria</option>
+                  <option value="Educación Técnica o Profesional">Educación Técnica o Profesional</option>
+                  <option value="Educación Superior">Educación Superior</option>
+                </select>
+                <label for="nivel-academico">Nivel de formación académica alcanzado</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-outline mb-3"> <!--Id campo de nombre de institucion-->
+            <input type="text" oninput="validarIntitucion()" title="Ingrese solo letras" id="institucion"
+              class="form-control" placeholder="Nombre de la institución" required /><!--Input para nombres-->
+            <label class="form-label" for="institucion">Nombre de la institución donde termino sus estudios</label>
+          </div>
+
+          <div class="form-outline mb-4">
+            <div class="form-group">
+              <select class="form-control" id="titulo" name="titulo">
+                <option disabled selected value="">Seleccione una opción</option>
+                <option value="Licenciatura">Licenciatura</option>
+                <option value="Maestría">Maestría</option>
+                <option value="Doctorado">Doctorado</option>
+                <option value="Título Profesional">Certificado Profesional</option>
+                <option value="Certificación Técnica">Certificación Técnica</option>
+                <option value="Diplomas de postgrado">Certificado de postgrado</option>
+              </select>
+              <label for="titulo">Título académico</label>
+            </div>
+          </div>
+
+          <!-- 2 column grid layout for inline styling -->
+          <div class="row mb-4">
+            <div class="col d-flex justify-content-center">
+              <button type="button" class="btn btn-dark btn-block"
+                onclick="guardarInformacionAcademica()">Guardar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+    </div>
+  <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+</body>
+
+
+</html>
